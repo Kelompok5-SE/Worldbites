@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container-completeorder {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Wallpaper.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.completeorder-wrapper {
+    background-color: #f8f8f8;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    height: 38.75rem;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    margin-bottom: 30px;
+    overflow-y: auto;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.25rem;
+    color: #B4835B;
+    font-family: 'Jersey 15', sans-serif;
+}
+
+.order-details {
+    display: flex;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 1.25rem;
+    justify-content: space-between;
+    align-items: center; /* Aligns the items vertically in the center */
+    margin-top: 1rem;
+    padding-bottom: 1rem; /* Adds padding at the bottom */
+    gap: 1.5rem;
+}
+
+.product-info-completeorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%; /* Adjusted width for better layout */
+}
+
+.product-image-completeorder {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.info-and-tracking-completeorder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%; /* Adjusted width for better layout */
+    padding: 15px;
+    border: 1px solid #B4835B;
+    border-radius: 8px;
+}
+
+.customer-info {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.tracking-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the tracking info */
+    width: 20%; /* Adjusted width for better layout */
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.tracking-number {
+    margin-bottom: 5px; /* Jarak antara nomor pelacakan dan status */
+}
+
+.completed-message {
+    background-color: #B4835B;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.order-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.trackingnumber-completeorder {
+    display: flex;
+    align-items: center; /* Aligns the content vertically */
+    gap: 0.5rem; /* Adds space between the label and the tracking number */
+    font-weight: bold; /* Ensures the label remains bold */
+    margin: 0.5rem 0; /* Adds some margin to the top and bottom */
+    font-size: 12px;
+}
+
+.separator-line {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ccc; /* Adjust the color and style as needed */
+}
+
+.no-history {
+    text-align: center;
+    font-size: 16px;
+    color: #888; /* Adjust the color to fit the design */
+    margin-top: 20px;
+}

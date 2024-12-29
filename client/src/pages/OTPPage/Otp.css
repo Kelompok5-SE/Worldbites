@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.otp-wrapper {
+   min-height: 100vh;
+   width: 100%;
+   
+   background-image: url('../../assets/Wallpaper.svg'); 
+   background-size: cover;        
+   background-position: center;  
+   background-repeat: no-repeat; 
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.titleotp {
+   font-family: 'Jersey 15', sans-serif; 
+   color: #B4835B;
+   font-size: 28px; 
+   margin-top: 1.825rem;
+}
+
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    background-color: #F9F8F6;
+    border-radius: 1.875rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+ }
+ 
+ .otp-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+ }
+ 
+ .verify-button {
+    font-family: 'Amaranth', sans-serif;
+    background-color: #B4835B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+
+ 
+ .verify-button:disabled {
+    background-color: #ccc;
+ }
+
+ 
+ .resend-button {
+    background: none;
+    color: #B4835B;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+ }
+ 
+ .resend-button:hover {
+   color: #8C6A4F; 
+}

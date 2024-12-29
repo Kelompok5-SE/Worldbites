@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amaranth', sans-serif;
+    background-color: #faf5f5;
+    min-height: 100vh;
+}
+
+/* Container for the entire Order History section */
+.order-history-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/Wallpaper.svg');
+    background-size: cover; 
+    background-position: center top; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px; /* Push content down to leave space for Navbar */
+}
+
+
+/* Container for My Purchases and below */
+.order-history-inner-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+
+
+/* Each order card (container) */
+.order-card {
+    gap: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.order-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Store name container */
+.order-store {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 25%;
+}
+
+.order-store p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b46a50;
+}
+
+.order-store img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Order items and quantity sections are displayed in a row */
+.order-body {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Order items section */
+.order-items {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.order-item-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    gap: 1rem;
+}
+
+.order-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.order-item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.order-item-quantity {
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevents wrapping of the quantity text */
+}
+
+/* Order Summary section (Right side) */
+.order-summary {
+    width: 30%;
+    text-align: right;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensures the content is aligned at the bottom */
+    align-items: flex-end;
+}
+
+.order-summary p {
+    margin: 5px 0;
+}
+
+.order-summary .total-price {
+    font-weight: bold;
+    color: #b46a50;
+    font-size: 18px;
+}
+
+.order-summary .tracking-number {
+    font-style: italic;
+    color: #666;
+}
+
+/* Order status button */
+.order-summary .order-status {
+    padding: 8px 12px;
+    background-color: #f5f0eb;
+    color: #e15c44;
+    border: 1px solid #e15c44;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.order-summary .order-status:hover {
+    background-color: #e15c44;
+    color: white;
+}
+
+
+/* Tab controls for switching between order and history */
+.tab-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-controls button {
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
+    color: #8d553f;
+    font-size: 18px;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.tab-controls button.active,
+.tab-controls button:hover {
+    border-bottom: 2px solid #8d553f;
+}
+
+.complete-button {
+    
+    font-family: 'Amaranth', sans-serif; /* Font family */
+    background-color: transparent; /* Latar belakang transparan */
+    color: black; /* Warna teks sesuai border */
+    border: 2px solid #B4835B; /* Border berwarna sesuai item */
+    padding: 10px 20px; /* Jarak dalam tombol */
+    width: 45%; /* Lebar tombol (atur sesuai kebutuhan) */
+    text-align: center; /* Rata tengah */
+    justify-content: center;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    display: flex;
+    font-size: 1rem; /* Ukuran font */
+    cursor: pointer; /* Mengubah cursor saat hover */
+    border-radius: 5px; /* Sudut melingkar */
+    float: right; /* Menggeser tombol ke kanan */
+}
+
+.complete-button:hover {
+    background-color: rgba(171, 132, 80, 0.1); /* Warna latar belakang saat hover (hijau transparan) */
+    color: #966d4b; /* Mengubah warna teks saat hover */
+}
+
+.complete-button:disabled {
+    background-color: transparent; /* Latar belakang transparan untuk tombol nonaktif */
+    color: #ccc; /* Warna teks untuk tombol nonaktif */
+    border: 2px solid #ccc; /* Border nonaktif */
+    cursor: not-allowed; /* Mengubah cursor untuk tombol nonaktif */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.modal-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+    transform: scale(0.5);
+    animation: popUp 0.3s forwards;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+    
+}
+
+.modal-confirm-btn {
+    font-family: 'Amaranth', sans-serif;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-cancel-btn {
+    font-family: 'Amaranth', sans-serif;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-confirm-btn:hover,
+.modal-cancel-btn:hover {
+    opacity: 0.9;
+}
+
+.chat-button {
+    font-family: 'Amaranth', sans-serif;
+    background-color: #8B5E34; /* Dark brown color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-button:hover {
+    background-color: #A67645; /* Slightly lighter shade for hover effect */
+}
+
+.chat-button:active {
+    background-color: #744622; /* Darker shade for active state */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chat-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px rgba(139, 94, 52, 0.4); /* Outline on focus */
+}
+
+
+/* Fade-in effect for overlay */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pop-up animation for modal */
+@keyframes popUp {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

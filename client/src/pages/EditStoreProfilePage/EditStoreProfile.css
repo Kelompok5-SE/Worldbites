@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+.edit-store-profile {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Wallpaper.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.edit-store-profile-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #B4835B;
+    max-width: 100%;
+}
+
+.edit-store-profile-content {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.edit-store-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    gap: 1rem;
+}
+
+.edit-store-description-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98.5%;
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+.edit-store-image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.edit-store-change-photo-btn {
+    background-color: #a67f5b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.edit-store-change-photo-btn:hover {
+    background-color: #956a48;
+}
+
+.edit-store-details-section {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 65%;
+    gap: 1.5rem;
+}
+
+.edit-store-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.edit-store-input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-store-input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-store-input-group input, .edit-store-input-group textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 120%;
+}
+
+.edit-store-input-group-description textarea {
+    height: 100px;
+    width: 210%;
+}
+
+.edit-store-save-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a67f5b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.edit-store-save-btn:hover {
+    background-color: #956a48;
+}
+
+.edit-store-save-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.edit-store-image-btn {
+    background-color: #a67f5b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.store-title {
+    font-family: 'Jersey 15', sans-serif;
+    color: #B4835B;
+    font-size: 28px;
+    border-bottom: 2px solid #B4835B;
+}
+
+.store-title h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #a67f5b;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}

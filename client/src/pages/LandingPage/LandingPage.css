@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Wallpaper.svg'); 
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    width: 70%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.searchbar {
+    flex: 1; 
+}
+
+.search__input {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.125rem 1.125rem;
+    background-position: 95% center;
+    border-radius: 8.33rem;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+}
+
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+    padding: 0.75rem 0;
+    outline: 0;
+    border: 0.0625rem solid transparent;
+    border-bottom: 0.0625rem solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.filter-button {
+    margin-right: 15px; 
+    margin-top: 0.0625rem;
+    padding: 10px 20px; 
+    background-color: #D9D9D9; 
+    height: 2.5rem;
+    color: #793E0E;
+    border: none; 
+    border-radius: 0.9375rem; 
+    cursor: pointer; 
+    font-size: 14px;
+    transition: background-color 250ms ease-in-out;
+}
+
+.filter-button:hover {
+    background-color: #EFD5E6; 
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto; 
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.carousel-slide img {
+    width: 100%; 
+    object-fit: cover; 
+    border-radius: 0.625rem; 
+    margin-top: 1rem;
+}
+
+.product-container {
+    display: flex;
+    gap: 25px;
+    overflow-x: hidden; /* Allows horizontal scrolling if products overflow */
+    scroll-behavior: smooth;
+    width: 95%; /* Takes the full width of the container */
+    margin: 0 auto; /* Centers the product container */
+    justify-content: flex-start; /* Aligns items to the start (left) */
+    margin-top: 3rem;
+}
+
+.product-box1 {
+    flex: 0 0 auto; /* Prevents shrinking and allows wrapping */
+    background-color: #fff;
+    border: 2px solid #793E0E; /* More prominent border color */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 10%; 
+    height: 10%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1.25rem;
+}
+
+.product-box1:hover {
+    transform: scale(1.05);
+    border-color: #EFD5E6;
+}
+
+
+.product-image1 {
+    width: 100%;
+    height: 180px; /* Ensures consistent height for all images */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border-radius: 12px; /* Rounded corners for images */
+    margin-bottom: 12px;
+}
+
+.product-info {
+    flex-grow: 1; /* Allows the content to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8px;
+    overflow: hidden; /* Prevents overflow */
+    text-overflow: ellipsis; /* Adds "..." for overflowed text */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* Limits to 1 line */
+}
+
+
+.product-price {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+
+/* Modal overlay to cover the whole screen */
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it's on top of all content */
+}
+
+/* Modal styling */
+.filter-modal {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Close button inside the modal */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.filter-content h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.filter-modal h2 {
+    font-size: 2rem; /* Increase modal heading font size */
+    margin-bottom: 20px;
+}
+
+.filter-modal h3 {
+    font-size: 1.5rem; /* Increase section headings inside the modal */
+    margin-bottom: 10px;
+}
+
+.filter-modal label {
+    font-size: 1.2rem; /* Increase font size for labels in the modal */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.filter-content ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styling the Apply Filter Button */
+.apply-filter-button {
+    font-family: 'Amaranth', sans-serif;
+    background-color:  #B4835B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;;
+    width: 30%;
+}
+
+
+/* Disable button style */
+.apply-filter-button:disabled {
+    background-color: #dcdcdc;
+    color: #888888;
+    cursor: not-allowed;
+}
+
+.filter-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

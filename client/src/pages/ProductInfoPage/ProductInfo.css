@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container-productinfo {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url('../../assets/Wallpaper.svg'); 
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 70%;
+    gap: 5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+}
+
+.product-image-container {
+    flex: 1;
+    border: 2px solid #ddd; /* Add a border to the image container */
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Ensures the image does not overflow the container */
+    max-width: 300px; /* Set a maximum width for the container */
+    max-height: 300px; /* Set a maximum height for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-info {
+    flex: 1;
+    width: 100%; /* Ensure the image takes full width */
+    height: 100%; /* Ensure the image takes full height */
+    object-fit: cover; /* Ensures the image scales and crops to fit */
+    border-radius: 10px; /* Ensures the image has the same rounded corners */
+}
+
+
+.store-profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.product-details-container {
+    flex: 2;
+}
+
+.product-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-top: 0.1rem;
+    color: #333;
+}
+
+
+.product-reviews {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.store-name-rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.store-name-rating-container span {
+    font-size: 20px;
+    color: #333;
+}
+
+.store-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.store-reviews-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.review-count {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-description {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product-description p {
+    margin: 5px 0;
+}
+
+.product-price h3 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #b37700;
+}
+
+.buy-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.decrease-quantity, .increase-quantity {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.buy-now-button {
+    font-family: 'Amaranth', sans-serif;
+    background-color: #b37700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-now-button:hover {
+    background-color: #9a6400;
+}
+
+.buybutton-cart {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.buybutton-cart img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.cart-logo {
+    cursor: pointer;
+}

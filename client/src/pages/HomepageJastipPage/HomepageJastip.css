@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Gabriela', serif;
+}
+
+.container-large {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.store-info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit-button {
+    font-family:'Amaranth', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    padding: 0.625rem;
+    background-color: #B4835B;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+.store-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    justify-content: center;
+}
+
+.store-icon {
+    width: 150px; /* Increased size for better visibility */
+    height: 150px; /* Increased size for better visibility */
+    border-radius: 50%;
+    border: 2px solid #793E0E; /* Added a border to fit the icon */
+    object-fit: cover;
+}
+
+.store-details h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.batch-products {
+    width: 70%;
+}
+
+.product-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 10px;
+}
+
+.product-item {
+    flex: 0 0 auto;
+    background-color: #fff;
+    border: 2px solid #793E0E; /* More prominent border color */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Adjusted width */
+    height: 250px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensures no content overflows */
+}
+
+.product-item img {
+    width: 100%; /* Full width inside the container */
+    height: 150px; /* Fixed height to maintain consistency */
+    object-fit: cover; /* Ensure the image fits nicely within the container */
+    border: 1px solid #ddd; /* Added a border around the image */
+    border-radius: 8px; /* Rounded image corners */
+}
+
+.view-store-btn {
+    font-family: 'Gabriela', serif;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #B4835B;
+    cursor: pointer;
+}
+
+.arrow-view-store img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.arrow-view-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #B4835B;
+    margin-right: 2.2rem;
+}
+
+.container-homepagejastip {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url('../../assets/Wallpaper.svg'); 
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-large {
+    background-color: white;
+    width: 77.5%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-small-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.container-small {
+    cursor: pointer;
+    background-color: white;
+    width: 20%; /* Adjusted to fit 4 containers */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.small-container-image {
+    width: 100px;
+    height: auto;
+}
+
+.order-completed-image {
+    width: 6.25rem; /* Adjusted size */
+    height: 5.5rem; 
+    object-fit: contain; 
+    margin-bottom: 0.625rem;
+}
+
+.net-income-image {
+    width: 6.25rem;
+    height: 5.9375rem;
+    object-fit: contain;
+    margin-top: 0.0625rem;
+}
+
+h3 {
+    font-family: 'Gabriela', serif;;
+}
+
+.product-name-jastip {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 8px;
+    overflow: hidden; /* Prevents overflow */
+    text-overflow: ellipsis; /* Adds "..." for overflowed text */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* Limits to 1 line */
+}

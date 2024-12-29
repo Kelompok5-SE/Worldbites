@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.view-store-page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Wallpaper.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-store-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f6f3;
+    border: 1px solid #d4a87e;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 85%;
+    margin-top: 5rem;
+}
+
+.store-name-viewstore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    margin-top: 20px;
+}
+
+
+.store-container {
+    padding: 20px;
+    background-color: #f9f6f3;
+    text-align: center;
+}
+
+.store-title {
+    font-size: 2.5rem;
+    color: #d4a87e;
+    font-family: 'Lobster', cursive;
+}
+
+.store-name-viewstore img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.store-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    border-bottom: 1px solid #d4a87e;
+    padding-bottom: 1.2rem;
+}
+
+.store-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.button-edit-viewstore {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 20%;
+}
+
+.button-edit-viewstore button {
+    font-family: 'Amaranth', sans-serif;
+    padding: 10px 20px;
+    background-color: #d4a87e;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.store-icon img {
+    width: 50px;
+}
+
+.store-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store-description {
+    max-width: 400px;
+}
+
+
+.store-from-stars-container {
+    width: 20%;
+    border: 2px solid #d4a87e; /* Border color matching the theme */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    background-color: #fff8f2; /* Light background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* New Store Description Container */
+.store-description-container {
+    border: 2px solid #d4a87e; /* Border color matching the theme */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    background-color: #fff8f2; /* Light background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.store-description p {
+    text-align: justify;
+    font-size: 1rem;
+    color: #333; /* Darker text */
+    margin: 0;
+}
+
+.product-list-view {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.product-list-viewstore {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 15%;
+    text-align: center;
+}
+
+.product-image-frame {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container-checkout {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Wallpaper.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-content {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+    width: 77%;
+}
+
+.checkout-left, .checkout-right {
+    width: 100%;
+    max-width: 600px;
+}
+
+.checkout-title input, .checkout-title textarea, .checkout-title select {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 149%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+}
+
+.checkout-title-header {
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d6a97c;
+    width: 195%;
+}
+
+.checkout-title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 130%;
+}
+
+.checkout-title label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.checkout-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.checkout-right {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1105px;
+}
+
+.button-calculateshipping button {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 129.5%;
+}
+
+.button-calculateshipping button:hover {
+    background-color: #2980b9;
+}
+
+.shipping-cost {
+    margin-top: 1.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.shipping-cost p {
+    margin: 0.5rem 0;
+}
+
+.cart-total-checkout{
+    font-weight: bold;
+    display: flex;
+}
+
+.cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-table-checkout {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 194%;
+}
+
+.button-calculateshipping {
+    width: 150%;
+}
+
+.cart-header-checkout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    gap: 2rem;
+}
+
+.cart-item-checkout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 2rem;
+}
+
+.cart-image-checkout img {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Reduce the gap between items */
+.product-name-cart-checkout, .cart-price, .quantity-selector-cart, .cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.button-checkout-cancel {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-checkout-cancel button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b;
+}
+
+.checkout-btn-page {
+    background-color: #3498db;
+    color: white;
+}
+
+.checkout-btn-page:hover {
+    background-color: #2980b9;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .checkout-content {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .checkout-left, .checkout-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .checkout-title input, .checkout-title textarea, .checkout-title select {
+        width: 100%;
+    }
+}

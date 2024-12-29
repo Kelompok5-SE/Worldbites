@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container-editprofile {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url('../../assets/Wallpaper.svg'); 
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.edit-profile-wrapper {
+   
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 1px solid #B4835B; /* Tambahkan border untuk melihat area wrapper */
+    border-radius: 1.875rem;
+    padding: 1.25rem; /* Tambahkan padding untuk memberi ruang */
+    background-color: #f9f9f9; /* Tambahkan background color untuk kontras */
+}
+
+.edit-profile-content {
+    display: flex;
+    align-items: flex-start; /* Menyusun item di bagian atas */
+    justify-content: space-between; /* Memberi ruang antara kolom */
+}
+
+.profile-section {
+    text-align: center; /* Agar konten di dalam kolom tersusun rata tengah */
+    margin-right: 1.25rem; /* Jarak antara gambar dan form */
+}
+
+.profile-pic {
+    width: 7.5rem; /* Atur lebar lingkaran */
+    height: 7.5rem; /* Atur tinggi lingkaran */
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    overflow: hidden; /* Menghapus bagian gambar yang melampaui lingkaran */
+    margin-bottom: 0.625rem; /* Jarak bawah gambar */
+}
+
+.profile-pic img {
+    width: 100%; /* Mengatur gambar untuk mengisi lingkaran */
+    height: 100%; /* Mengatur tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.change-photo-btn {
+    font-family: 'Jersey 15', sans-serif; /* Menggunakan font Jersey 15 */
+    font-size: 20px;
+    background-color: #B4835B; /* Ganti dengan warna sesuai keinginan */
+    color: white;
+    border: none;
+    padding: 0.625rem 0.9375rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
+
+.profile-form {
+    flex: 1; /* Membuat form mengambil sisa ruang yang tersedia */
+}
+
+.input-group {
+    margin-bottom: 0.9375rem;
+}
+
+.input-group input {
+    font-family: 'Amaranth', sans-serif;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.3125rem;
+}
+
+.save-btn {
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 20px;
+    width: 15%; /* Agar tombol mengisi lebar form */
+    background-color: #B4835B; /* Ganti dengan warna sesuai keinginan */
+    color: white;
+    border: none;
+    padding: 0.625rem 0.9375rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    width: 95%; 
+    height: 6.25rem; 
+    padding: 0.625rem; 
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem; 
+    resize: vertical; 
+    font-size: 16px; 
+    outline: none; 
+    transition: border-color 0.3s; 
+  }
+  
+  textarea:focus {
+    border-color: #B4835B; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }

@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/gagalin');
+
+.container-navbar {
+    width: 100%;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #e0e0e0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    height: 75px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    height: 80%;
+}
+
+.navbar .logo img {
+    width: 80px; 
+    height: auto;
+}
+
+h1 a {
+    flex-grow: 1; 
+    text-align: center; 
+    font-size: 37px;
+    color: #a67a52;
+    margin: 0; 
+    font-family: 'Gagalin', sans-serif;
+    font-weight: normal;
+    margin-left: 130px;
+    text-decoration: none;
+}
+
+
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.navbar .icons img {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.chat-logo {
+    transform: scale(1.3);  /* Memperbesar 1.5 kali ukuran aslinya */
+    margin-top: 5px;
+    margin-right: -5px;
+}
+
+.profile-dropdown {
+    position: relative; /* Posisi relatif untuk dropdown */
+}
+
+.dropdown-menu {
+    position: absolute; /* Posisi absolut untuk dropdown */
+    top: 100%; /* Tempatkan di bawah ikon profil */
+    right: 0; /* Tempatkan ke kanan */
+    background-color: #F9F8F6; /* Warna latar belakang dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan dropdown */
+    border-radius: 4px; /* Sudut dropdown */
+    z-index: 10;
+    width: 150px; 
+}
+
+.dropdown-item {
+    padding: 10px 15px; 
+    color: #B4835B;
+    cursor: pointer;
+    border-bottom: 1px solid #B4835B ;
+}
+
+.dropdown-item:hover {
+    background-color: #EFD5E6; 
+}
+
+.profile-dropdown img {
+    width: 40px; /* Set the width of the profile picture */
+    height: 40px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    border: 2px solid #f0f0f0; /* Optional: Add a border around the profile picture */
+}

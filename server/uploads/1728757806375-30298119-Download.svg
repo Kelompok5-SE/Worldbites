@@ -1,0 +1,9 @@
+<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Download">
+<rect width="16" height="16" transform="translate(0.5)" fill="white" fill-opacity="0.01" style="mix-blend-mode:multiply"/>
+<g id="Vector">
+<path d="M13.5 12V14H3.5V12H2.5V14C2.5 14.2652 2.60536 14.5196 2.79289 14.7071C2.98043 14.8946 3.23478 15 3.5 15H13.5C13.7652 15 14.0196 14.8946 14.2071 14.7071C14.3946 14.5196 14.5 14.2652 14.5 14V12H13.5Z" fill="#0F3162"/>
+<path d="M13.5 7L12.795 6.295L9 10.085V1H8V10.085L4.205 6.295L3.5 7L8.5 12L13.5 7Z" fill="#0F3162"/>
+</g>
+</g>
+</svg>

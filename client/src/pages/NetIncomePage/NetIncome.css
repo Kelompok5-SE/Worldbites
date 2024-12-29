@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.netincome-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Wallpaper.svg'); 
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.netincome-wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+}
+
+.netincome-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #B4835B;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.netincome-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.revenue-title {
+    font-size: 1rem;
+    color: #B4835B;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.revenue-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #B4835B;
+}
+
+.revenue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #B4835B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admin-fee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #B4835B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.revenue, .bank-input, .account-input, .admin-fee {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.admin-fee p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #B4835B;
+}
+
+
+.bank-input select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.account-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.withdraw-btn {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #B4835B;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.withdraw-btn:hover {
+    opacity: 0.9;
+}

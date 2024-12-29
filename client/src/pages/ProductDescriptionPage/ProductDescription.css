@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container-productdescription {
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url('../../assets/Wallpaper.svg'); 
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-productdescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-description-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #B4835B;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 4.375rem;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Mengarahkan ke atas */
+    align-items: center; /* Agar tetap sejajar secara horizontal */
+    flex-direction: column;
+}
+
+.add-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px dashed #a67c52;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.add-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-placeholder {
+    font-size: 40px;
+    color: #a67c52;
+}
+
+.right-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Gabriela', serif;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #a67c52;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.edit-photo-btn {
+    font-family: 'Gabriela', serif;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #B4835B;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+
+.edit-photo-btn:hover {
+    background-color: #c08a57;
+}
+
+.button-group-productdescription {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+.save-btn1, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #B4835B;
+    color: white;
+    font-family: 'Gabriela', serif;
+}
+
+.save-btn1:hover, .delete-btn:hover {
+    background-color: #c08a57;
+}
+
+.add-photo img {
+    width: 100%;
+    height: 100%;
+}

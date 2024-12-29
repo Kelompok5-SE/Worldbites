@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: be.Dockerfile
+    ports:
+      - "3011:3011"
+    volumes:
+      - ./server/uploads:/app/uploads
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: fe.Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
